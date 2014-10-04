@@ -1,0 +1,7 @@
+Schedule for taping date for every two minutes
+
+corntab 123.txt
+
+  */2 * * * * echo $(date)>>123.txt
+  
+  
