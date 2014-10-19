@@ -1,0 +1,34 @@
+SELECT town, (
+employed + unemployed + inactive
+)
+FROM workers;
+
+
+SELECT town, (
+employed + unemployed + inactive
+)
+FROM workers
+ORDER BY (
+employed + unemployed + inactive
+) DESC;
+
+SELECT town, (
+employed + unemployed + inactive
+) AS Total
+FROM workers
+ORDER BY Total DESC;
+
+SELECT town, (inactive/(
+employed + unemployed + inactive
+))*100 AS Percentaje
+ORDER BY Total DESC
+WHERE  employed >20000 FROM workers;
+SELECT town, employed
+FROM workers
+WHERE employed >20000
+ORDER BY employed DESC;
+
+
+UPDATE workers SET employed=employed+unemployed+inactive, unemployed=0, inactive=0 where ID = 3; SELECT * 
+FROM workers
+
