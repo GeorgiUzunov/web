@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+
+
+
+using namespace std;
+
+int main()
+{
+  char ch='!' + 10;
+  int chislo = 12;
+  cout << "Hello World!" << ch << endl << (int)ch << endl << chislo-(200*2);
+  /* cout << "Enter a number";*/
+  cout << "\nEnter temperature: ";
+  cin >> chislo;
+  /*cout << "The number " << chislo << " ^2 = " << chislo*chislo << endl;*/
+  if (chislo < 0) cout << "Freezing \n"; 
+  else if ( 0 <= chislo < 15) cout << "Cold\n";
+    	else if ( chislo >= 15 && chislo <25 ) cout << "Cool\n";
+  				else if ( chislo >= 25 && chislo <35 ) cout << "Warm\n";
+  					else cout << "Super hot\n";
+  return 0;
+}
