@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <assert.h>
+#include <stdlib.h>
+#include <iostream>
+/*
+This function will find the biggest of two integers
+*/
+using namespace std;
+int max2(int a, int b)
+{
+	if (a>b) {
+	cout<<a<< endl;
+	return a;
+	}
+	cout<<b<< endl;
+	return b;
+	/*return a ^ ((a ^ b) & -(a < b));*/
+/* Write your code here*/
+}
+int main()
+{
+int i = 1;
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(0, 0) == 0);
+fprintf(stdout, "OK\n");
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(1, 0) == 1);
+fprintf(stdout, "OK\n");
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(-1, 10) == 10);
+fprintf(stdout, "OK\n");
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(-5, -1) == -1);
+fprintf(stdout, "OK\n");
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(-100, 0) == 0);
+fprintf(stdout, "OK\n");
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(9, 9) == 9);
+fprintf(stdout, "OK\n");
+fprintf(stdout, "Test %d: ", i++);
+assert( max2(-139, -139) == -139);
+fprintf(stdout, "OK\n");
+return 0;
+}
