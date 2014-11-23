@@ -1,0 +1,41 @@
+#include "bitmap_image.hpp"
+
+int main () {
+	unsigned char r, g, b, avg, gray, f;
+	int x, y;
+
+	bitmap_image img("girl1.bmp");
+	
+	for ( x = 0; x < img.width(); x++) {
+		for ( y = 0; y < img.height(); y++) {
+			img.get_pixel(x, y, r, g, b);
+			
+			// black & white
+			
+			//gray = (.299 * r + .587 * g + .114 * b);
+			
+			//r = g = b = gray;
+			//avg = (r + g + b)/3;
+			
+			//r = g = b = avg;
+			//fprintf(stdout, "(%d, %d) - rgb(%d, %d, %d)\n", x, y, r, g, b);
+			//system("pause");
+			//if (x < 40) {
+				//r = g = b = 0;
+			
+			//b = 255;
+			//f = 20; r ^= f; g ^= f; b ^= f;
+			//r = 255 - r; g = 255 - g; b = 255 - b;
+			
+			r= ~r; g= ~g; b= ~b;
+			
+			
+			
+			img.set_pixel(x, y, r, g, b);
+			}
+		}
+
+	img.save_image ("output8.bmp");
+	
+	return 0;	
+}
