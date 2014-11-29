@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html";
+		charset="utf-8" />
+		
+		<title> Моята втора страница </title>
+	</head>
+	<body bgcolor="#00FF00" text="#FF0000"
+	background="2014G.jpg" link="green" vlink="brown" alink="yellow">
+	<img src="2014G.jpg" height="200" width="300" vspace="180" hspace="300" border = "6" 
+	alt="Честита нова 2014 година" align="right"> 
+		<a name="top"> </a>
+		<h1> Здрасти! </h1>
+		<hr width=40% align="right" size=6 color="red">
+			<a href="#down" align="right"> Надолу </a>
+		<br>
+		<a href=mailto:georgi_uzunov@mail.bg> My e_mail </a>
+		<br>
+		<a href="http://www.sportal.bg/" target="_blank"> Sportal </a>
+		<br>
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html" 
+			> Нова година 
+		</a>			
+		<ul type="rhomb">
+			<li> Име </li>
+			<li> Фамилия </li>
+			<li> Град </li>
+		</ul>
+			
+		<a href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html"
+			> <img src="2014G.jpg" height="100" width="150" vspace="100" hspace="100" alt="Честита нова 2014 година">
+		</a>
+		<br>
+		<font size = 4 face = "Arial" color= "blue"> Arial
+		</font> 
+		<br>
+		<div align="center">
+		
+		<font size = 4 color= "red"> Times New Roman
+		</font>
+		<h1> Здрасти! </h1>
+		<hr width=40% align="right" size=6 color="red">
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html" 
+			> Нова година 
+		</a>
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html"
+			> <img src="2014G.jpg" height="100" width="150" vspace="100" hspace="100" alt="Честита нова 2014 година">
+		</a>
+		<br>
+		<font size = 4 face = "Arial" color= "blue"> Arial
+		</font> <br>
+		<div align="center">
+		
+		<font size = 4 color= "red"> Times New Roman
+		</font>
+		<h1> Здрасти! </h1>
+		<hr width=40% align="right" size=6 color="red">
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html" 
+			> Нова година 
+		</a>
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html"
+			> <img src="2014G.jpg" height="100" width="150" vspace="100" hspace="100" alt="Честита нова 2014 година">
+		</a>
+		<br>
+		<font size = 4 face = "Arial" color= "blue"> Arial
+		</font> <br>
+		<div align="center">
+		
+		<font size = 4 color= "red"> Times New Roman
+		</font>
+		</div>
+		<h1> Здрасти! </h1>
+		<hr width=40% align="right" size=6 color="red">
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html" 
+			> Нова година 
+		</a>
+		<a 
+			href="C:\Documents and Settings\Windows XP OEM\Desktop\GU1.html"
+			> <img src="2014G.jpg" height="100" width="150" vspace="100" hspace="100" alt="Честита нова 2014 година">
+		</a>
+		<br>
+		<font size = 4 face = "Arial" color= "blue"> Arial
+		</font> <br>
+		<div align="center">
+		
+		<font size = 4 color= "red"> Times New Roman
+		</font>
+		<a href="#top"> Нагоре </a>
+		<a name="down"> </a>
+		</div>
+		</div>
+	</body>
+</html>
