@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html";
+		charset="utf-8" />
+		
+		<title> Моята първа страница </title>
+	</head>
+	<body bgcolor="#00FF00" text="#FF0000">
+	<body background="2014G.jpg">
+	<img src="2014G.jpg" height="200" width="300" vspace="180" hspace="300" border = "6" alt="Честита нова 2014 година" align="right"> 
+		<h1> Заглавие 1 </h1>
+		<hr width=20% align="right" size=6 color="blue">
+		
+		<h6> Заглавие 6 </h6>
+		<br>
+		<font size = 4 face = "Arial" color= "blue"> Arial
+		</font> <br>
+		<div align="center">
+		
+		<font size = 4 color= "red"> Times New Roman
+		</font>
+		</div>
+	</body>
+</html>
