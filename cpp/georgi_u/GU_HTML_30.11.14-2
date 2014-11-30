@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title> Primer za vmakvane na JavaScript direktno v HTML
+		</title>
+	</head>
+	<body onload="alert ('Hello')">
+		<!--<script language="JavaScript"> document.write("Tozi tekst e vmaknat v HTML - koda na dokumenta")
+		</script> -->
+		<script language="JavaScript"> 
+		var firstName=prompt("Vavedete parvoto si ime");
+		var lastName=prompt("Vavedete familiata si");
+		document.write("Zdravejte! Kazvam se " + firstName + " " + lastName)
+		
+		</script>
+	</body>
+</html>
