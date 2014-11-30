@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html";
+		charset="utf-8" />
+		
+		<title> University </title>
+	</head>
+	<body>
+		<form name="University" border=1 cols=40>
+			<fieldset name="Academic information">
+				<legend> Academic information </legend>
+					<form name="Degree"> Degree
+						<select name="Degree" size=1>
+						<option value="MSD"> Master of business administration </option>
+						<option value="MPF"> Master of public finance </option> </select>
+					</form>
+					<form name="Student ID" size=1>  Student ID 
+					<input type="text" name="Student ID" size=22 maxlength=22 />
+					</form>
+					<form name="Classes attended"> Classes attended
+						<select name="Classes attended" size=4>
+						<option value="Geo"> Geography </option>
+						<option value="Math"> Mathematics </option> 
+						<option value="Eng"> English </option> </select>
+					</form>
+			</fieldset>
+			<fieldset name="Personal Details">
+				<legend> Personal Details </legend>
+					<form name="Personal Details"> 
+					First name 
+					<input type="text" name="First name " size=22 maxlength=22 />
+					<br> Last name 
+					<input type="text" name="Last name " size=22 maxlength=22 />
+					<br> Gender:
+					<input type="radio" name="gender" value="Male" /> Male 
+					<input type="radio" name="gender" value="Female" /> Female 
+					<input type="radio" name="gender" value="Middle" /> Middle 
+					<br> Email
+					<input type="text" name="Email " size=22 maxlength=22 />	
+					</form> <br>
+			</fieldset>	
+			<textarea name="TERMS AND CONDITIONS" cols=30 rows=6 > TERMS AND CONDITIONS.....
+			</textarea> <br>
+			<input type="submit" name="Send" value="Send Form"/>
+			<input type="reset" name="Clear" value="Clear Form"/>
+		</form>
+	<body>
+</html>
