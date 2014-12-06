@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Izvejdane na tekushto vreme
+		</title>
+	</head>
+	<body>
+		<script language="JavaScript"> 
+		variableTime=new Date();
+		document.write("The time is: "+variableTime.getHours()+ "-" + variableTime.getMinutes() +
+		"-" + variableTime.getSeconds() );
+		</script>
+		
+		</br>
+		
+		<script language="JavaScript"> 
+		variableDate=new Date();
+		document.write("The date is: "+variableDate.getDate()+ "-" + (variableDate.getMonth()+1) +
+		"-" + variableDate.getFullYear() );
+		</script>
+		
+		</br>
+		
+		<script language="JavaScript"> 
+		var dayNames = new Array("неделя", "понеделник", "вторник", "сряда", "четвъртък", "петък", "събота");
+		var today = new Date();
+		document.write("Днес е " + dayNames[today.getDate()] + "!");
+		
+		</script>
+			
+	</body>
+</html>
