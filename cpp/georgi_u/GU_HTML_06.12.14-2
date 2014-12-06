@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<script language="JavaScript"> 
+		function welcome() {
+		document.write ("<h3> <marquee> Welcome to my Site! </marquee> </h3>")
+		}
+		</script>	
+	</head>
+	<body>
+		<script language="JavaScript"> 
+		welcome()
+		</script>
+	</body>
+</html>
