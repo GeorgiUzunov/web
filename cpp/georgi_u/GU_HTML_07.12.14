@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+	<title>Calculator</title>
+	<script language="JavaScript">
+		var sign;
+		function check() {
+
+			var but = document.getElementsByName("group2");
+				
+			for ( var i=0; i<but.length; i++)	{
+				if (but[i].value == "Add" && but[i].checked)
+				{
+					sign = "+";
+					break;
+				} else {
+				if (but[i].value == "Minus" && but[i].checked)
+					{ 
+					sign = "-";
+					break;
+				} else {
+				if (but[i].value == "Multiply" && but[i].checked)
+					{ 
+					sign = "*";
+					break;
+					} 
+				else {
+					if (but[i].value == "Divide" && but[i].checked) 
+					{
+					sign = "/";
+					break;
+					}
+				}
+				}
+				}
+			}
+		}
+				
+		function calculate() {
+			
+			var x = parseFloat(document.forms.exchange.x.value);
+			var y = parseFloat(document.forms.exchange.y.value);
+			var result;
+			
+			switch(sign) {
+				case "+": {
+					result=x+y;
+					break;
+				}
+				case "-": {
+					result=x-y;
+					break;
+				}
+				case "/": {
+					result=x/y;
+					break;
+				}
+				case "*": {
+					result=x*y;
+					break;
+				}
+			}	
+			document.forms.exchange.result.value = result.toFixed(2);
+			}
+	</script>
+
+</head>
+<body>
+	<fieldset>
+		<legend> Калкулатор </legend>
+		<form name="exchange"> Въведете двете числа 
+		X <input type="text" name="x" >
+		Y <input type="text" name="y" >
+		<br><br>
+
+		<input type="radio" name="group2" value="Add" onchange="Show()" >Add<br>
+		<input type="radio" name="group2" value="Minus" onchange="Show()"> Minus<br>
+		<input type="radio" name="group2" value="Multiply" onchange="Show()" > Multiply<br>
+		<input type="radio" name="group2" value="Divide" onchange="Show()" > Divide<br>
+
+		<br>
+		<input type="button" name="equal" value="=" onClick="calculate()"> <br><br>
+		Резултат <input type="text" name="result"> <br><br>
+		
+		</form>
+	</fieldset>
+</body>
+</html>
