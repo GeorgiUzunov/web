@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<title>calc</title>
+<script language="JavaScript">
+var sign;
+function check() {
+
+var rad = document.getElementsByName("group");
+				
+				
+				for (var i = 0; i < rad.length; i++)
+				{
+					if(rad[i].value == "addition" && rad[i].checked)
+					{
+						
+						sign="+";
+						
+						break;
+					}
+					else{
+					if(rad[i].value == "substraction" && rad[i].checked)
+					{
+						sign = "-";
+					
+						break;
+					}
+					else{
+					if(rad[i].value == "multiplication" && rad[i].checked)
+					{
+						
+						sign="*";
+						break;
+					}
+					else{
+					if(rad[i].value == "partition" && rad[i].checked)
+					{
+						
+						sign="/";
+						break;
+					}
+					}
+					}
+
+}
+}
+}
+function calculate()
+			{
+				
+				var x = parseFloat(document.forms.calc.x.value);
+				var y = parseFloat(document.forms.calc.y.value);
+				var res;
+				
+				switch(sign)
+				{
+					case "+":
+						{
+						res=x+y;
+						break;
+						}
+					case "-":
+					{
+						res=x-y;
+						break;
+					}
+					case "*":
+					{
+						res=x*y;
+						break;
+					}
+					case "/":
+					{
+						res=x/y;
+						break;
+					}
+					}
+					
+			document.forms.calc.result.value = res.toFixed(2);
+			}
+
+</script>
+</head>
+<body>
+<fieldset>
+<legend> Простичък калкулатор </legend>
+<form name="calc">
+X = <input type="text" name="x"> <br><br>
+Y = <input type="text" name="y"> <br><br>
+<input type="radio" name="group" value="addition" onChange="check()"> +<br>
+<input type="radio" name="group" value="substraction"onChange="check()"> -<br>
+<input type="radio" name="group" value="multiplication" onChange="check()"> *<br>
+<input type="radio" name="group" value="partition" onChange="check()"> /<br>
+<br>
+<input type="button" name="equal" value="		=		" onClick="calculate()"> <br><br>
+
+Резултат: <input type="text" name="result"> <br><br>
+</form>
+</fieldset>
+</body>
+</html>
